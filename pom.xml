@@ -122,5 +122,11 @@
             </properties>
         </profile>
     </profiles>
+         <distributionManagement>
+        <repository>
+            <id>nexus-releases</id> <!-- Match this ID with the settings.xml -->
+            <url>http://44.202.1.231:8081/repository/maven-releases/</url>
+        </repository>
+    </distributionManagement>
 
 </project>
