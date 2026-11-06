@@ -58,10 +58,10 @@ pipeline {
                 nexusArtifactUploader(
                     nexusVersion: 'nexus3',
                     protocol: 'http',
-                    nexusUrl: "${NEXUS_MAVEN_URL}",
+                    nexusUrl: "${44.204.187.63:8081}",
                     groupId: "${GROUP_ID}",
                     version: "${VERSION}",
-                    repository: "${MAVEN_REPO}",
+                    repository: "${Maven-Nexus-Repo}",
                     credentialsId: 'nexus-credentials',
                     artifacts: [
                         [
