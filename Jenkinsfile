@@ -89,8 +89,8 @@ pipeline {
             steps {
                 withCredentials([usernamePassword(
                     credentialsId: 'docker-nexus-credentials',
-                    usernameVariable: 'DOCKER_USER',
-                    passwordVariable: 'DOCKER_PASS'
+                    usernameVariable: 'harshitha0510',
+                    passwordVariable: 'Harshi&10'
                 )]) {
                     sh """
 
