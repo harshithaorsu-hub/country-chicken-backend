@@ -94,12 +94,12 @@ pipeline {
                 )]) {
                     sh """
 
-                    echo "$DOCKER_PASS" | docker login ${NEXUS_DOCKER_URL} -u "$DOCKER_USER" --password-stdin
+                    echo "$DOCKER_PASS" | docker login 98.81.230.204:8083 -u "$DOCKER_USER" --password-stdin
 
                     docker push ${NEXUS_DOCKER_URL}/${DOCKER_REPO}/${APP_NAME}:${VERSION}
                     docker push ${NEXUS_DOCKER_URL}/${DOCKER_REPO}/${APP_NAME}:latest
 
-                    docker logout ${NEXUS_DOCKER_URL}
+                    docker logout 98.81.230.204:8083
                     """
 
                 }
